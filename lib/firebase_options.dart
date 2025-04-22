@@ -59,11 +59,12 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyCei_57SHZPKt6SxWcKW9U8yP_P572QEqo',
-    appId: '1:452210767879:ios:d64c280cce6f46fdfb52a2',
+    appId: '1:452210767879:ios:de8771b17aabb30efb52a2',
     messagingSenderId: '452210767879',
     projectId: 'saunav-demo',
     storageBucket: 'saunav-demo.firebasestorage.app',
-    iosClientId: '452210767879-o13klvcgi87ebdjl35ouc8nk0j267n72.apps.googleusercontent.com',
-    iosBundleId: 'com.example.demo',
+    iosClientId: '452210767879-ct62c8d14o8dm57tshm3cpqe9njtoi4l.apps.googleusercontent.com',
+    iosBundleId: 'com.maranix.demo',
   );
+
 }

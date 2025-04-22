@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "452210767879",
+    "project_id": "saunav-demo",
+    "storage_bucket": "saunav-demo.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452210767879:android:e06adf30348eab2efb52a2",
+        "android_client_info": {
+          "package_name": "com.example.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452210767879-7be6g6q3lb3eopiad1p070pubofltjck.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP5AUbMX2WEV0Ac5-kG5BdrzoQZoxv5l4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452210767879-7be6g6q3lb3eopiad1p070pubofltjck.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "452210767879-o13klvcgi87ebdjl35ouc8nk0j267n72.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.demo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
