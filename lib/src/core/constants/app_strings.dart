@@ -10,4 +10,14 @@ abstract final class AppStrings {
   static const SIGN_IN_TO_CONTINUE = "Sign in to continue";
 
   static const LOGIN_WITH_GOOGLE = "Login in with Google";
+
+  static const UNKNOWN_ERROR_OCCURRED = "An unknown error occurred";
+
+  static const TOP = "TOP";
+
+  static const BOTTOM = "BOTTOM";
+
+  static const SELECTED_GARMENTS_DIALOG_TITLE = "Selected Garments";
+
+  static const SELECTED_GARMENTS_DIALOG_DONE_BUTTON = "Done";
 }
