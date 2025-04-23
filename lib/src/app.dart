@@ -1,6 +1,6 @@
 import 'package:demo/src/core/constants/app_strings.dart';
 import 'package:demo/src/features/auth/auth.dart';
-import 'package:demo/src/features/home/home.dart';
+import 'package:demo/src/features/selfie/selfie.dart';
 import 'package:demo/src/features/splash/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -17,25 +17,22 @@ class DemoApp extends StatelessWidget {
         colorScheme: const ShadSlateColorScheme.light(),
         brightness: Brightness.light,
       ),
-      home: Selector<AuthProvider, AuthState>(
-        builder: (context, state, child) {
-          WidgetsBinding.instance.addPostFrameCallback((_) {
-            final navigator = Navigator.of(context);
-
-            Future.delayed(const Duration(milliseconds: 400), () {
-              if (state == AuthState.signedOut) {
-                navigator.pushAndRemoveUntil(LogInScreen.route(), (_) => false);
-              } else if (state == AuthState.signedIn) {
-                navigator.pushAndRemoveUntil(HomeScreen.route(), (_) => false);
-              }
-            });
-          });
-
-          return child!;
-        },
-        selector: (context, provider) => provider.state,
-        child: SplashScreen(),
-      ),
+      home: const AuthGate(),
     );
+  }
+}
+
+class AuthGate extends StatelessWidget {
+  const AuthGate({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final state = context.watch<AuthProvider>().state;
+
+    return switch (state) {
+      AuthState.initial => const SplashScreen(),
+      AuthState.signedOut => const LogInScreen(),
+      AuthState.signedIn => const SelfieScreen(),
+    };
   }
 }

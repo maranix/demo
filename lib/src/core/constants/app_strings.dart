@@ -20,4 +20,12 @@ abstract final class AppStrings {
   static const SELECTED_GARMENTS_DIALOG_TITLE = "Selected Garments";
 
   static const SELECTED_GARMENTS_DIALOG_DONE_BUTTON = "Done";
+
+  static const SELFIE_SCREEN_TITLE = "Take 6 selfies";
+
+  static const SELFIE_SCREEN_TAKE_PICTURE_BUTTON = "Take Picture";
+
+  static const REVIEW_SELFIE_SCREEN_TITLE = "Review your selfies";
+
+  static const REVIEW_SELFIE_SCREEN_CONFIRM_BUTTON = "Confirm Images";
 }

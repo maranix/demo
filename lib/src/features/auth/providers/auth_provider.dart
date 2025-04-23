@@ -45,15 +45,18 @@ final class AuthProvider extends ChangeNotifier {
   }
 
   Future<void> signOut() async {
+    print('Signing Out');
     _setLoading();
     try {
       await _repository.signOut();
+      print('Signed Out');
     } catch (e) {
       _setError(AppStrings.SOMETHING_WENT_WRONG_ERROR_TITLE);
     } finally {
       _resetLoading();
       notifyListeners();
     }
+    print('Done');
   }
 
   void _setLoading() {
